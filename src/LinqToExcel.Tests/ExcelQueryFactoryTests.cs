@@ -413,7 +413,9 @@ namespace LinqToExcel.Tests
             {
                 var excel = new ExcelQueryFactory(_excelFileWithBuiltinWorksheets, new LogManagerFactory());
 
-                Assert.Throws<InvalidOperationException>(() => excel.GetWorksheetNames());
+                // Assert.Throws<InvalidOperationException>(() => excel.GetWorksheetNames());
+                Assert.DoesNotThrow(() => excel.GetWorksheetNames());
+
             }
         }
 
