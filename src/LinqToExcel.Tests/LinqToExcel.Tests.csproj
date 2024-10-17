@@ -11,6 +11,7 @@
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.9.0" />
     <PackageReference Include="NUnit.Extension.VSProjectLoader" Version="3.8.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.1" />
   </ItemGroup>
   <!-- Run tests for .Net 3.5 in x64 mode, by default -->
   <PropertyGroup Condition="'$(TargetFramework)|$(Platform)' == 'net35|AnyCPU'">
@@ -48,7 +49,6 @@
     <None Include="ExcelFiles\EmptyRows.xls">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Reference Include="System.Transactions" />
     <None Update="ExcelFiles\WorksheetNames.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
